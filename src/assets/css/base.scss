@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+}
+.main-box{
+  padding: 10px 10px 10px 0;
+}
+.demo-title1{
+  text-align: left;
+}
+.demo-box{
+  display: flex;
+  border: 2px solid #A7BFE8;
+  justify-content: space-between;
+  .demo-code,.demo-result{
+    flex: 1;
+  }
+  .demo-code{
+    border-right: 2px solid #A7BFE8;
+    pre{
+      margin: 0;
+      text-align: left;
+    }
+    h3{
+      margin: 0;
+      text-align: left;
+    }
+  }
+  .demo-result{
+    text-align: left;
+    padding: 10px;
+    h3{
+      margin: 0;
+      text-align: left;
+    }
+  }
+}
