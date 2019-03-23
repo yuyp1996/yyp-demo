@@ -13,6 +13,7 @@ body{
   justify-content: space-between;
   .demo-code,.demo-result{
     width: 50%;
+    overflow: hidden;
   }
   .demo-code{
     border-right: 2px solid #A7BFE8;
