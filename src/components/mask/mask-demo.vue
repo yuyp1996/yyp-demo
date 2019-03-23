@@ -74,7 +74,7 @@ export default {
 }`
         },
         {
-          name: 'svg 自带mask遮罩(只有Firefox下有效)',
+          name: 'svg 自带mask遮罩（所有浏览器以及IE9）',
           html: `<svg width="250" height="186">
     <image xlink:href="https://user-gold-cdn.xitu.io/2019/3/19/169936a894b4a755?w=500&h=353&f=jpeg&s=55651" class="g-mask-bg4" width="250" height="186"></image>
 </svg>`,
@@ -104,7 +104,7 @@ export default {
 }`
         },
         {
-          name: 'cross-fade()功能符',
+          name: 'element()功能符资源(只有Firefox下有效)',
           html: `<h4 id="title">马萨卡马萨卡马萨卡</h4>
 <img class="g-mask-bg7" src="https://user-gold-cdn.xitu.io/2019/3/19/169936a894b4a755?w=500&h=353&f=jpeg&s=55651" />`,
           css: `#title {
