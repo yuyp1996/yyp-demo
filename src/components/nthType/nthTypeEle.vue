@@ -33,11 +33,14 @@
           </div>
           <div class="demo-result">
             <div class="nth-type">
+              <p>
+                我是第1个p元素
+              </p>
               <span v-for="item in 5" v-if="!isDeleteSpan">
                 我是第{{item}}个span元素
               </span>
               <p v-for="item in 5">
-                我是第{{item}}个p元素
+                我是第{{item+1}}个p元素
               </p>
             </div>
             <button @click="isDeleteSpan = !isDeleteSpan">{{isDeleteSpan?'显示':'隐藏'}}span元素</button>
@@ -53,12 +56,15 @@
     name: 'nth-childEle-demo',
     data() {
       return {
-        html: `<div class="nth-child">
-  <span v-for="item in 5">
+        html: `<div class="nth-type">
+  <p>
+    我是第1个p元素
+  </p>
+  <span v-for="item in 5" v-if="!isDeleteSpan">
     我是第{{item}}个span元素
   </span>
   <p v-for="item in 5">
-    我是第{{item}}个p元素
+    我是第{{item+1}}个p元素
   </p>
 </div>
 <button @click="isDeleteSpan = !isDeleteSpan">{{isDeleteSpan?'显示':'隐藏'}}span元素</button>`,
