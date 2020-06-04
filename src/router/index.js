@@ -9,6 +9,8 @@ import nthChildEle from '@/components/nthChild/nthChildEle'
 import nthChildClass from '@/components/nthChild/nthChildClass'
 import nthTypeEle from '@/components/nthType/nthTypeEle'
 import nthTypeClass from '@/components/nthType/nthTypeClass'
+import adaptiveTextarea from '@/components/adaptiveTextarea/adaptive-textarea'
+import adaptiveDiv from '@/components/adaptiveTextarea/adaptive-div'
 
 Vue.use(Router)
 
@@ -63,5 +65,15 @@ export default new Router({
       name: 'nthTypeClass',
       component: nthTypeClass
     },
+    {
+      path: '/adaptiveTextarea',
+      name: 'adaptiveTextarea',
+      component: adaptiveTextarea
+    },
+    {
+      path: '/adaptiveDiv',
+      name: 'adaptiveDiv',
+      component: adaptiveDiv
+    }
   ]
 })
