@@ -11,6 +11,8 @@ import nthTypeEle from '@/components/nthType/nthTypeEle'
 import nthTypeClass from '@/components/nthType/nthTypeClass'
 import adaptiveTextarea from '@/components/adaptiveTextarea/adaptive-textarea'
 import adaptiveDiv from '@/components/adaptiveTextarea/adaptive-div'
+import autoPos from '@/components/autoPos/autoPos'
+import autoPosJS from '@/components/autoPos/autoPosJS'
 
 Vue.use(Router)
 
@@ -74,6 +76,16 @@ export default new Router({
       path: '/adaptiveDiv',
       name: 'adaptiveDiv',
       component: adaptiveDiv
+    },
+    {
+      path: '/autoPos',
+      name: 'autoPos',
+      component: autoPos
+    },
+    {
+      path: '/autoPosJS',
+      name: 'autoPosJS',
+      component: autoPosJS
     }
   ]
 })
