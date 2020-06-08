@@ -34,6 +34,28 @@
                   </code>
               </pre>
             </div>
+            <div v-highlight>
+              <h3>JS代码：</h3>
+              <pre>
+                  <code>
+const eleBox = document.getElementById('eleBox');
+const elePos = document.getElementById('elePos');
+const dist = 30;
+const eleTop = elePos.offsetTop;
+if (eleBox && elePos) {
+  eleBox.addEventListener('scroll', function (e) {
+    if (eleBox.scrollTop > eleTop - dist) {
+      elePos.style.cssText = `position:fixed;margin:0;top:${eleBox.offsetTop + dist}px;width:${eleBox.clientWidth}px`;
+      elePos.nextElementSibling.style.marginTop = `${elePos.offsetHeight + eleBox.offsetTop + dist}px`;
+    } else {
+      elePos.style.cssText = 'position:inherit;';
+      elePos.nextElementSibling.style.marginTop = `0`;
+    }
+  });
+}
+                  </code>
+              </pre>
+            </div>
           </div>
           <div class="demo-result">
             <div class="g-box" id="eleBox">
@@ -53,14 +75,16 @@
     mounted() {
       const eleBox = document.getElementById('eleBox');
       const elePos = document.getElementById('elePos');
-      const dist = 10;
+      const dist = 30;
       const eleTop = elePos.offsetTop;
       if (eleBox && elePos) {
         eleBox.addEventListener('scroll', function (e) {
           if (eleBox.scrollTop > eleTop - dist) {
-            elePos.style.cssText = `position:fixed;margin:0;top:${eleBox.offsetTop + 10}px;width:${eleBox.clientWidth}px`;
+            elePos.style.cssText = `position:fixed;margin:0;top:${eleBox.offsetTop + dist}px;width:${eleBox.clientWidth}px`;
+            elePos.nextElementSibling.style.marginTop = `${elePos.offsetHeight + eleBox.offsetTop + dist}px`;
           } else {
             elePos.style.cssText = 'position:inherit;';
+            elePos.nextElementSibling.style.marginTop = `0`;
           }
         });
       }
