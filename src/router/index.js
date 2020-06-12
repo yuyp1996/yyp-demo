@@ -13,6 +13,8 @@ import adaptiveTextarea from '@/components/adaptiveTextarea/adaptive-textarea'
 import adaptiveDiv from '@/components/adaptiveTextarea/adaptive-div'
 import autoPos from '@/components/autoPos/autoPos'
 import autoPosJS from '@/components/autoPos/autoPosJS'
+import column from '@/components/column/column'
+import scrollSnap from '@/components/scrollSnap/scrollSnap'
 
 Vue.use(Router)
 
@@ -86,6 +88,16 @@ export default new Router({
       path: '/autoPosJS',
       name: 'autoPosJS',
       component: autoPosJS
+    },
+    {
+      path: '/column',
+      name: 'column',
+      component: column
+    },
+    {
+      path: '/scrollSnap',
+      name: 'scrollSnap',
+      component: scrollSnap
     }
   ]
 })
