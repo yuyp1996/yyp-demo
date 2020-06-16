@@ -15,6 +15,7 @@ import autoPos from '@/components/autoPos/autoPos'
 import autoPosJS from '@/components/autoPos/autoPosJS'
 import column from '@/components/column/column'
 import scrollSnap from '@/components/scrollSnap/scrollSnap'
+import formSkill from '@/components/formSkill/formSkill'
 
 Vue.use(Router)
 
@@ -98,6 +99,11 @@ export default new Router({
       path: '/scrollSnap',
       name: 'scrollSnap',
       component: scrollSnap
+    },
+    {
+      path: '/formSkill',
+      name: 'formSkill',
+      component: formSkill
     }
   ]
 })
