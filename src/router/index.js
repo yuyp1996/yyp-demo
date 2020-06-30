@@ -16,6 +16,7 @@ import autoPosJS from '@/components/autoPos/autoPosJS'
 import column from '@/components/column/column'
 import scrollSnap from '@/components/scrollSnap/scrollSnap'
 import formSkill from '@/components/formSkill/formSkill'
+import pastePictures from '@/components/pastePictures/pastePictures'
 
 Vue.use(Router)
 
@@ -104,6 +105,11 @@ export default new Router({
       path: '/formSkill',
       name: 'formSkill',
       component: formSkill
+    },
+    {
+      path: '/pastePictures',
+      name: 'pastePictures',
+      component: pastePictures
     }
   ]
 })
