@@ -15,7 +15,7 @@
   "dependencies": {
     "handlebars": "^4.7.6",
     "highlight.js": "^9.15.6",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "package": "^1.0.1",
     "sass": "^1.17.3",
     "sass-loader": "^7.1.0",
